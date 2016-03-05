@@ -1,0 +1,123 @@
+.top-menu-container {
+	height: 53px;
+	background: #0a0a0c;
+	.grid {
+		width: 1260px;
+	}
+	.top-menu {
+		height: 100%;
+		float: left;
+		li {
+			float: left;
+			margin-right: 40px;
+			height: 100%;
+			line-height: 53px;
+			a {
+				font-size: 12px;
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover {
+					color: #3ab0ed;
+				}
+			}
+		}
+	}
+	.top-menu-form {
+		float: right;
+		position: relative;
+		margin-top: 12px;
+		input[type="submit"] {
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			position: absolute;
+  			right: 10px;
+  			top: 8px;
+			padding: 0;
+			background: url('../img/icons/top-menu-search-icon.png');
+			outline: none;
+		}
+		input[type="text"] {
+			height: 30px;
+		  	width: 0px;
+		  	line-height: 30px;
+		  	font-size: 13px;
+		  	padding: 0 35px 0 10px;
+		  	opacity: 0;
+		}
+	}
+}
+
+.header {
+	height: 100px;
+	position: relative;
+	z-index: 10;
+	background: rgba(10,10,12,0.9);
+	.grid {
+		width: 1260px;
+	}
+	.logo {
+		float: left;
+		margin-top: 29px;
+		width: 204px;
+		height: 39px;
+		background: url('../img/icons/logo.png');
+	}
+	.main-menu {
+		float: left;
+		margin-left: 44px;
+		height: 100%;
+		li {
+			float: left;
+			margin-right: 63px;
+			height: 100%;
+			line-height: 103px;
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: 300;
+				&:hover {
+					color: #3ab0ed;
+				}
+			}
+		}
+	}
+	.contacts {
+		float: right;
+		margin-top: 26px;
+		margin-left: 9px;
+  		text-align: right;
+		li {
+			margin-left: 29px;
+			margin-bottom: 6px;
+			color: #fff;
+			font-size: 12px;
+			font-weight: 300;
+			a {
+				color: #fff;
+				&:hover {
+					color: #3ab0ed;
+				}
+			}
+			&.skype {
+				margin-bottom: 16px;
+				padding-left: 25px;
+				background: url('../img/icons/header-skype-icon.png') no-repeat left center;
+			}
+			&.mail {
+				padding-left: 25px;
+				background: url('../img/icons/header-mail-icon.png') no-repeat left center;
+			}
+		}
+		&.contacts2 {
+			margin-top: 23px;
+			li {
+				text-align: left;
+				padding-top: 3px;
+  				padding-bottom: 3px;
+			}
+		}
+	}
+}

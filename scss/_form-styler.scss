@@ -1,0 +1,22 @@
+.jq-checkbox {
+	top: -1px;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin: 0 9px 0 0;
+	border: 2px solid #e5e4e2;
+	cursor: pointer;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+	width: 10px;
+	height: 10px;
+	margin: 3px 0 0 3px;
+	background: #3ab0ed;
+	border: 1px solid #e5e4e2;
+}
+.jq-checkbox.focused {
+	border: 2px solid #e5e4e2;
+}
+.jq-checkbox.disabled {
+	opacity: .55;
+}

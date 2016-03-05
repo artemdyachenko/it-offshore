@@ -1,0 +1,72 @@
+.switcher {
+  cursor: pointer;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.switcher .content {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0;
+}
+.switcher .text {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.switcher.default {
+  margin: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  line-height: 26px;
+  width: 32px;
+  height: 13px;
+  padding: 2px;
+  color: transparent;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.switcher.default input {
+  display: none;
+}
+.switcher.default .slider {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  background-color: white;
+  border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  left: -4px;
+  position: absolute;
+  top: -5px;
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  z-index: 2;
+}
+.switcher.default .text {
+  width: 50%;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.switcher.default .textYes {
+  float: left;
+}
+.switcher.default .textNo {
+  float: right;
+}
+.switcher.default.is-active {
+  background-color: #8fd44b;
+}
+.switcher.default.is-active .slider {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}

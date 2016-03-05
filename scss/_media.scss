@@ -1,0 +1,36 @@
+@media screen and (max-width: 1440px) {
+	.footer .footer-container:before {
+		width: 100%;
+		left: 0;
+	}
+	.footer .footer-container:after {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 1280px){
+    .top-menu-container .grid,
+    .header .grid,
+    .footer .grid {
+	  width: 960px;
+	}
+
+	.top-menu-container .top-menu li {
+		margin-right: 30px;
+	}
+
+	.header .logo {
+		margin-left: 10px;
+	}
+
+	.header .main-menu li:last-child {
+		margin-right: 0;
+	}
+
+	.footer .footer-container .footer-feedback {
+	    width: 300px;
+	    float: left;
+	    margin-top: 10px;
+	}
+}
